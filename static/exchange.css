@@ -1,0 +1,70 @@
+.title-exchange h1 {
+    font-size: 23px;
+    line-height: 26px;
+    color: #2e2e2e;
+    font-weight: normal;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.content-text .datetime label {
+    font-size: 14px;
+    line-height: 17px;
+    position: relative;
+    margin-left: 30px;
+
+}
+
+.currency-date {
+    font-size: 18px;
+    line-height: 23px;
+    margin: 16px 0;
+    margin-left: 30px;
+}
+
+.exchange {
+    margin-left: 30px;
+}
+
+.exchange table {
+    width: 620px;
+    margin: 8px 0 32px 0;
+    border-bottom: 1px solid #3ea045;
+    border-left: 1px solid #3ea045;
+    border-right: 1px solid #3ea045;
+    border-collapse: separate;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.exchange .buying{
+    text-align: center;
+
+}
+
+.exchange th {
+    font-size: 13px;
+    line-height: 18px;
+    padding: 10px;
+    border: 1px solid #ededed;
+    text-align: left;
+    font-weight: bold;
+    border-collapse: collapse;
+
+}
+
+.exchange h2 {
+    font-size: 14px;
+    line-height: 17px;
+}
+.exchange td{
+    font: bold ;
+    font-size: 13px;
+    line-height: 18px;
+    padding: 10px;
+    border: 1px solid #ededed;
+    width: 33%;
+    border-collapse: collapse;
+}

@@ -1,0 +1,389 @@
+
+.search{
+    background-color: #F1F1F1;
+    width: 150px !important;
+    padding: 4px 26px 6px 9px !important;
+    height: 25px;
+}
+.main-search i{
+    position: absolute;
+    padding-left: 130px;
+    color: #49B751;
+}
+#online_account_login{
+    margin-top: 5px;
+    background-color: #49B751;
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+.nav-link{
+    color: white !important;
+}
+#online_queue_login{
+    margin-left: 10px;
+    margin-top: 5px;
+    background-color: #49B751;
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+#internet_bank_login{
+    margin-left: 10px;
+    margin-top: 5px;
+    background-color: #49B751;
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+.language{
+    display: flex;
+    flex-direction: row;
+    padding-left: 15px;
+}
+.mobile_app_icon i{
+    background-color: #d1cfcf;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    margin-top: 3px;
+    color: #49B751 ;
+    font-size: 20px;
+    margin-top: 5px;
+}
+.mobile_app_icon i:hover {
+    cursor: pointer;
+    color: #F1F1F1;
+    background-color: #49B751;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    position:relative;
+    min-width:130px;
+}
+.dropdown-item{
+    white-space:pre-wrap ;
+    float: left;
+    padding: 2px ;
+    line-height: 15px;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+    width: 10px !important;
+    background-color: #49B751;
+    font-size: 15px;
+}
+.dropdown:hover .dropdown-item{
+    color: white;
+    background-color: #49B751;
+    display: inline; 
+}
+.dropdown:hover .dropdown-item:hover{
+    text-decoration: underline;
+}
+.header-outer{
+    padding-top: 15px;
+}
+.main-menu{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.all-menu{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    height: 46px;
+    align-items: center;
+    width: 50%;
+}
+.menu a{
+    text-decoration: none;
+    color:black;
+    display: flex;
+    padding: 14px;
+    font-size: 13px;
+    line-height: 15px;
+    color: #49555c;
+}
+.menu{
+    width: 180px;
+    border-left: 1px solid gray;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    line-height: 15px;
+
+}
+#connect{
+    border-right: 1px solid gray;
+}
+.exception a{
+    margin-top: 7px;
+    margin-bottom: 7px ;
+}
+.menu:hover{
+    background: linear-gradient(#fff, #d3d3d3);
+}
+.button-more{
+    border: none;
+    color: #49B751;
+    background-color: #fff;
+    border-bottom: 3px solid #a8a8ad;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 9px 0 12px 0;
+    text-align: center;
+    width: 15%;
+    margin-bottom: 50px;
+}
+.button-more:hover{
+    border: none;
+    cursor: pointer;
+    color:#F1F1F1 ;
+    background-color: #01810a;
+}
+.top-pic{
+   margin-bottom: 300px;
+}
+.top-lines{
+    padding-left: 330px;
+    display: flex;
+    flex-direction: row;
+}
+.top-title{
+    margin-bottom: 200px;
+    text-align: center;
+    margin-left: 15px;
+}
+.top-line{
+    margin-bottom: 200px;
+    margin-left: 15px;
+    float: left;
+    height: 22px;
+}
+.top-subtitle{
+    margin-left: 100px ;
+    text-align: center;
+    font-size: 35px;
+    width: 60%;
+    margin-bottom: 100px;
+    text-shadow: 3px 3px 3px black;
+}
+.last-lines{
+    padding-left: 100px;
+    display: flex;
+    flex-direction: row;
+}
+.last-subtitle{
+    margin-left: 70px ;
+    text-align: center;
+    font-size: 35px;
+    width: 60%;
+    margin-bottom: 100px;
+    text-shadow: 3px 3px 3px black;
+}
+.additions{
+    width: 100%;
+    background-color: #e8e8e8;
+    position: relative;
+    padding: 35px 0;
+    margin-bottom: 28px;
+    margin-top: 40px;
+}
+.blocks-outer{
+    /* width: 100%; */
+    height: 19px;
+    background-image: url('https://www.pashabank.az/templates/images/bottom_blocks_top_detail.gif');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    margin-left: 47%;
+}
+.container{
+    width: 940px;
+    margin: 0 auto;
+    position: relative;
+}
+.additions-items{
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+.additions-item{
+    margin-right: 20px;
+    background-color: #fff;
+    padding: 60px 30px 80px ;
+    width: calc(50% - 10px);
+    font-family: "Fedra Sans Alt Book 2",Arial
+}
+.additions-text{
+    font-size: 19px;
+    line-height: 24px;
+    color: #2e2e2e;
+   
+}
+.additions-text p{
+    padding: 0 0 20px 0;
+}
+.additions-button{
+    width: 160px;
+    height: 27px;
+    display: block;
+    text-align: center;
+    color: #fff !important;
+    background-color: #49b751;
+    border-bottom: 2px solid #007d57;
+    border-radius: 0;
+    padding-top: 8px;
+    font-size: 13px;
+    line-height: 18px;
+    text-decoration: none;
+    box-sizing: content-box;
+}
+.last-button{
+    margin-top: 40px;
+}
+.additions-button:hover{
+    background-color: #06620c;
+    cursor: pointer;
+}
+.all-cards{
+    display: flex;
+    flex-direction: column;
+   
+}
+.four-cards{
+    display: flex;
+    flex-direction: row;
+}
+.card{
+    background-image: url('	https://www.pashabank.az/templates/images/mainl_page_listing_bg_02.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 390px;
+    margin-bottom: 50px;
+    margin-right: 20px
+}
+.card-img-top{
+    width: 62px;
+    height: 62px;
+    margin: 8px 0 263px 0;
+    width: 100%;
+    text-align: center;
+}
+.card-title{
+    font-size: 19px;
+    line-height: 24px;
+    color: #fff;    
+    text-align: center !important;
+    font-weight: normal;
+    /* width: 200px; */
+    position: absolute;
+    top: 62px;
+}
+.card-text {
+    top: 150px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center !important;
+    color: #fff;
+    margin-right: 10px;
+    width: auto !important;
+    padding: 0 16px;
+    position: absolute;
+}
+.btn{
+    width: 130px;
+    height: 27px;
+    border: none;
+    margin-left: 10px;
+    bottom: 30px;
+    position: absolute;
+    display: block;
+    text-align: center;
+    color: #fff !important;
+    background-color: #49b751;
+    border-bottom: 2px solid #007d57;
+    border-radius: 0;
+    padding-top: 8px;
+    font-size: 13px;
+    line-height: 18px;
+    text-decoration: none;
+    box-sizing: content-box;
+}
+.btn:hover{
+    background-color: #06620c;
+    cursor: pointer;
+}
+.carrier{
+    margin-left:50px;
+}
+.special{
+    margin-left: 20px;
+}
+.finance{
+    margin-left: 15px;
+}
+.last-cards{
+    display: flex;
+}
+.last-card{
+    background-image: url('https://www.pashabank.az/templates/images/listing_a_bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    margin-right: 20px;
+    width: 220px;
+    height: 283px;
+    margin-bottom: 23px;
+    position: relative;
+}
+.last-card h5{
+    font-size: 19px;
+    line-height: 18pt;
+    color: #2e2e2e;
+    margin-bottom: 100px;
+    text-align: center;
+    font-weight: normal;
+    position: absolute;
+    margin-left: -20px;
+    top: 20px;
+    width: 210px;
+    text-align: center !important;
+}
+.last-card p{
+    font-size: 14px;
+    line-height: 15pt;
+    text-align: center;
+    color: #626469;
+    position: absolute;
+    padding: 86px 27px 35px 27px;
+    top: 0;
+}
+.last-card a{
+    font-size: 14px;
+    line-height: 15pt;
+    text-align: center;
+    color: #49B751;
+    position: absolute;
+    padding: 86px 27px 35px 27px;
+    top: 120px;
+    margin-left: 15px;
+}
+.third-card{
+    white-space: pre-wrap;
+}
+.third-card-text{
+    top: 25px !important;
+}
