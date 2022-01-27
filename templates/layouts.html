@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    {% block head %}
+
+    {% endblock %}
+</head>
+<body>
+    <div class="row justify-content-md-center">
+        <nav class=" col-6 col-auto navbar navbar-expand-lg navbar-light bg-light">
+            <div class="col-4 d-flex align-items-center ">
+                <a href="/home"> <img
+                        src="	https://www.pashabank.az/templates/images/pashabank-logo-az.svg" alt="">
+                </a>
+                <div class="language">
+                    <span>AZ</span>
+                    |
+                    <a href="#">EN</a>
+                    |
+                    <a href="#">RU</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="  collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="main-search">
+                    <form class="form-inline my-2 my-lg-0 ">
+                        <input class="form-control mr-sm-5 search" type="text" placeholder="Axtarış"
+                            aria-label="Search"><i class="fas fa-search"></i>
+                    </form>
+                </div>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active " id="online_account_login">
+                        <a class="nav-link" href="#">Müştəri olun <span class="sr-only">(current)</span></a>
+                    </li>
+                    {% block online %}
+                    
+                    {% endblock %}
+                    <li class="nav-item dropdown" id="internet_bank_login">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
+                            Onlayn Bank
+                        </a>
+    
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Hüquqi şəxslər və fərdi sahibkarlar</a>
+                            <a class="dropdown-item" href="#">Fiziki şəxslər</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="mobile_app_icon">
+                    <a href=""><i class="far fa-mobile"></i></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+    <div class="header-outer">
+        <div class="main-menu">
+            <ul class="all-menu">
+                <li class="menu exception">
+                    <a href="">Haqqımızda</a>
+                </li>
+                <li class="menu">
+                    <a href="">Korporativ Bankçılıq</a>
+                </li>
+                <li class="menu">
+                    <a href="">Kiçik və Orta Biznes</a>
+                </li>
+                <li class="menu">
+                    <a href="">İnvestisiya Bankçılığı</a>
+                </li>
+                <li class="menu">
+                    <a href="">Maliyyə İnstitutları</a>
+                </li>
+                <li class="menu">
+                    <a href="">Fərdi Bankçılıq</a>
+                </li>
+                <li class="menu exception">
+                    <a href="">Xəbərlər</a>
+                </li>
+                <li class="menu">
+                    <a href="">Onlayn xidmətlər</a>
+                </li>
+                <li class="menu exception" id="connect">
+                    <a href="">Əlaqə</a>
+                </li>
+    
+            </ul>
+        </div>
+    </div>
+    {% block content %}
+    
+    {% endblock %}
+        <div class="footer-img"></div>
+        <div class="utility-outer">
+            <div class="container">
+                <div class="utility-inner">
+    
+                    <div class="utility-innerline">
+                        <ul class="utility-inner-list">
+                            <li>
+                                <a href="#">
+                                    <div class="footer-icon">
+                                        <img src="https://www.pashabank.az/templates/images/footer-sprite-icons.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nodecor1">
+                                <a href="#">Filiallar və bankomatlar</a>
+                                <ul>
+                                    <li class="nodecor">
+                                        <a class="heighline" href="#">Baş ofis</a>
+                                    </li>
+                                    <li class="nodecor">
+                                        <a class="heighline" href="#">Filiallar</a>
+    
+                                    </li>
+                                    <li class="nodecor">
+                                        <a class="heighline" href="#">Bankomatlar və Avtomatik valyura deəyişmə
+                                            terminalı</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="utility-innerline1">
+                        <ul class="utility-inner-list">
+                            <li>
+                                <a href="#">
+                                    <div class="footer-icon">
+                                        <img src="https://www.pashabank.az/templates/images/footer-sprite-icons.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nodecor1">
+                                <a href="#">Əməliyyar ölkələri</a>
+                                <ul>
+                                    <li class="nodecor">
+                                        <a class="heighline" href="#">Azərbaycan</a>
+                                    </li>
+                                    <li class="nodecor">
+                                        <a class="heighline" href="#">Türkiyə</a>
+    
+                                    </li>
+                                    <li class="nodecor">
+                                        <a class="heighline" href="#">Gürcüstan</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="utility-innerline1">
+                        <ul class="utility-inner-list">
+                            <li>
+                                <a href="#">
+                                    <div class="footer-icon">
+                                        <img src="https://www.pashabank.az/templates/images/footer-sprite-icons.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nodecor1">
+                                <a href="#">Maliyyə hesabatları</a>
+                            </li>
+                    </div>
+    
+                    <div class="utility-innerline1">
+                        <ul class="utility-inner-list">
+                            <li>
+                                <a href="#">
+                                    <div class="footer-icon">
+                                        <img src="https://www.pashabank.az/templates/images/footer-sprite-icons.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nodecor1">
+                                <a href="#">Təklif və şikayətlər</a>
+                            </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+        <div class="footer-top">
+            <div class="footer-inner-top">
+                <nav id="footermenu">
+                    <div class="container1">
+                        <div class="raw">
+                            <a href="">Haqqımızda</a>
+                            <a href="">Missiya və məqsədlər</a>
+                            <a href="">İdarəetmə</a>
+                            <a href="">Struktur</a>
+                            <a class="second bolded" href="">Haqqımızda</a>
+                            <a href="">Karyera</a>
+                            <a href="">Əlaqə</a>
+                            <a href="">Banklar arası müxbir əlaqələr</a>
+                            <a href="">Sosial məsuliyyət</a>
+                            <a href="">Siyasət və hesabatlılıq</a>
+                            <a href="">Maliyyə hesabatları</a>
+                            <a href="">Davamlı inkişaf</a>
+                            <a href="">Risklərin idarə olunması</a>
+                        </div>
+                        <div class="raw">
+                            <a class="bolded">Korporativ Bankçılıq</a>
+                            <a href="">Hesablaşma-kassa xidmətləri</a>
+                            <a href="">Depozitlər</a>
+                            <a href="">İnkassasiye</a>
+                            <a href="">Bank seyflləri</a>
+                            <a href="">Bank kartları</a>
+                            <a href="">Korperativ kreditləşmə</a>
+                            <a href="">Faktorinq xidmətləri</a>
+                            <a href="">Sənədli əməliyyatlar</a>
+                            <a href="">Ekvayrinq(POD terminal) xidmətləri</a>
+                            <a href="">Distant bank xidmətləri</a>
+                            <a href="">Ümumi şərtlər toplusu və ona əlavələr</a>
+                        </div>
+                        <div class="raw">
+                            <a class="bolded">Kiçik və orta bizneslər</a>
+                            <a href="">Biznes üçün xidmətlər</a>
+                            <a href="">Kreaditlər</a>
+                            <a href="">Faktorinq</a>
+                            <a href="">Sənədli əməliyyatlar</a>
+                            <a href="">Digər xidmətlər</a>
+                        </div>
+                        <div class="raw">
+                            <a class="bolded">İnvestisiya Bankçılığı</a>
+                            <a href="">Səhmilərin buraxılması, idarə olunması və alınması</a>
+                            <a href="">Qapalı yerləşdirmə</a>
+                            <a href="">İstiqrazların buraxılması, idarə olunması və alınması</a>
+                            <a href="">Maliyyə məsləhətlərinin verilməsi</a>
+                            <a href="">Törəmə maliyyə alərləri (derivativlər)</a>
+                            <a href="">Valyuta mübadiləsi</a>
+                            <a href="">Qiymətli kağızların alışı və satışının icra edilməsi</a>
+                            <a href="">Qiymətl kağızların alışı və satışı üzrə əqdlər</a>
+                        </div>
+                    </div>
+    
+    
+                    <div class="container1">
+                        <div class="raw">
+                            <a class="second bolded" href="">Maliyyə instutları</a>
+                        </div>
+                        <div class="raw">
+                            <a class="bolded">Fərdi bankçılıq</a>
+                            <a href="">Private banking</a>
+                            <a href="">Hesablaşma-kassa xidmətləri</a>
+                            <a href="">Depozitlər</a>
+                            <a href="">Bank kartları</a>
+                            <a href="">Distant bank xidmətləri</a>
+                            <a href="">Əlaqə Mərkəzi</a>
+                            <a href="">Kreditlər</a>
+                            <a href="">Fərdi müştərilər üçün Mobil əlavə</a>
+                            <a href="">Endirim Platforması</a>
+                            <a href="">Onlayn xidmətlər</a>
+                            <a href="">Ümumi Şərtlər Toplusu</a>
+                        </div>
+                        <div class="raw">
+                            <a class="bolded">Xəbərlər</a>
+                            <a href="">Press-relizlər</a>
+                            <a href="">Bülleten</a>
+                        </div>
+                        <div class="raw">
+                            <a class="bolded">Əlaqə</a>
+                            <a href="">Ünvan</a>
+                            <a href="">Müxbir əlaqələr</a>
+                            <a href="">Təklif və şikayətlər</a>
+                        </div>
+                    </div>
+    
+                    <hr style="width:60%" , size="3" , color=black>
+    
+                    <div class="container1">
+                        <div class="raw">
+                            <a href="">Saytın xəritəsi</a>
+                            <a href="">Məxfilik haqqında bəyanat</a>
+                            <a href="">İstifadə qaydaları</a>
+                            <a href="">Kibertəhlükəsizliyiniz önəmlidir!</a>
+                            <div class="share">
+                                <a href="" title="Adif" target="_blank">
+                                    <img src="https://www.pashabank.az/templates/images/footer-sprite-icons.jpg"
+                                        alt="Əmanətlərin Sığortalanması Fondu-Insurance Fund">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="raw br">
+                            <a class="bolded">Əlaqə</a>
+                            13, Yusif Məmmədəliyev küç.
+                            <br>
+                            Bakı, AZ1005, Azərbaycan
+                            <br>
+                            *8123 / (+994 12) 496 50 04
+                            <br>
+                            Fərdi müştərilər üçün:"
+                            <br>
+                            *9123 / (+99 412) 496 50 00
+                            <br>
+                            <br>
+                            Baş ofis: (+994 12) 496 51 00
+                            <br>
+                            F: (+994 12) 496 50 10
+                            <br>
+                            E:
+                            <a href="">customer.care@pashabank.az</a>
+                        </div>
+                        <div class="raw br">
+                            <a class="bolded">Bizimlə əlaqə saxlayın</a>
+                            Ən son məlumatları burdan izləyin
+                            <div class="socials">
+                                <div class="share">
+                                    <a href="" title="Facebook" target="_blank">
+                                        <img src="https://www.pashabank.az/templates/images/footer-sprite-icons.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="share">
+                                    <a href="" title="Facebook" target="_blank">
+                                        <img src="https://www.pashabank.az/templates/images/footer-sprite-icons.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="share">
+                                    <a href="" title="Facebook" target="_blank">
+                                        <img src="https://www.pashabank.az/templates/images/footer-sprite-icons.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            Mobil əlavəni yükləyin
+                            <div class="socials">
+                                <div class="share">
+                                    <a href="">
+                                        <img src="https://www.pashabank.az/templates/images/footer-sprite-icons.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="share">
+                                    <a href="">
+                                        <img src="https://www.pashabank.az/templates/images/footer-sprite-icons.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="raw br">
+                            Bank Azərbaycan Respublikası Mərkəzi Bankının 250 saylı 28 noyabr 2007-ci il tarixli
+                            lisenziyası əsasında fəaliyyət göstərir
+                            <br>
+                            <br>
+                            © 2007-2022 PASHA Bank
+                            <br>
+                            <br>
+                            <a href="">Powered by MediaDesign</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+{% block script %}
+{% endblock %}
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+</script>
+
+</html>

@@ -1,0 +1,90 @@
+{% extends "layouts.html" %}
+{% from "_formhelpers.html" import render_field %}
+{% block head %}
+<link rel="stylesheet" href="{{url_for('static', filename='online_queue.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='new_queue.css')}}">
+{% endblock %}
+{% block online %}
+<li class="nav-item" id="online_queue_login">
+    <a class="nav-link" href="/online">Onlayn növbə</a>
+</li>
+{% endblock %}
+
+
+
+{% block content %}
+
+<main id="main">
+    <div class="grid">
+        <div class="grid-unit">
+            <h1>Onlayn növbə</h1>
+            <div class="content-block ">
+                <div class="row">
+                    <form class="form--horizontal padding--add" method="POST">
+                        <div class="slat push-down">
+                            <pre> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus sapiente cupiditate neque natus sunt. Sed, quod natus. Ipsa nobis voluptatem nam dolor provident doloremque in optio neque? A, eos molestiae.</pre>
+                        </div>
+                        {{ form.csrf_token }}
+                        {{ render_field(form.name)}}
+                        {{ render_field(form.surname)}}
+                        {{ render_field(form.number)}}
+                        {{ render_field(form.email)}}
+                        {{ render_field(form.date)}}
+                        {{ render_field(form.time)}}
+
+
+
+
+
+
+                        <button type="button" class="queue-button" data-toggle="modal"
+                            data-target="#exampleModal">Növbə
+                            al</button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Növbəniz:</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <p> {{m}}</p> 
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class=" btn-primary">Bağla</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<script>
+    document.getElementById('date').value = new Date().toISOString().substring(0, 10);
+</script>
+{% block script %}
+<script>
+   
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0');
+    var yyyy = today.getFullYear();
+
+    today = yyyy + '-' + mm + '-' + dd;
+    $('#date').attr('min', today);
+</script>
+{% endblock %}
+
+{% endblock %}

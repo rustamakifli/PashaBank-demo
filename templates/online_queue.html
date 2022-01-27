@@ -1,0 +1,82 @@
+{% extends "layouts.html" %}
+{% block head %}
+<link rel="stylesheet" href="{{url_for('static', filename='online_queue.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+{% endblock %}
+
+
+
+
+
+{% block content %}
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Növbənizi daxil edin </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form action="" method="post">
+                <div class="modal-body">
+                    <input type="text" maxlength="7" name="queue">
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class=" modal-button red-button" data-dismiss="modal">İmtina
+                        et</button>
+                    <button type="submit" class=" modal-button green-button" id="btn">Təsdiqlə</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="container" >
+    <div class=" error ">
+        {{message}}
+    </div>
+</div>
+
+
+<div class="container div-main">
+    <div class="row ">
+        <div class="col ">
+            <div class="all-queue-text ">
+                <section class="main-layout main-div container">
+                    <div class="text-content">
+                        <h2>Onlayn növbə</h2>
+                        <h3>Fiziki şəxslər üçün onlayn növbə</h3>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-4 col-sm-12  mr-auto">
+                            <a href="/queue" class="button-text">
+                                <button class="main-button">
+                                    <p>Növbə al</p>
+                                </button>
+                            </a>
+
+                        </div>
+                        <div class="col-md-4 col-sm-12  mr-auto"></div>
+                        <div class="col-md-4 col-sm-12  mr-auto">
+                            <button class="main-button">
+                                <a href="#" class="main-button-text  " data-toggle="modal"
+                                    data-target="#exampleModal">Növbəni ləğv et</a>
+                            </button>
+                        </div>
+                        <div class="main-page-img main-div">
+                            <img src="https://online-queue-pp.kapitalbank.az:9872/bookfiziki/images/girl_sit_down.png"
+                                alt="">
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

@@ -43,7 +43,15 @@ table {
     text-align: center;
 
 }
-
+.currency-button{
+    width: 130px;
+    height: 27px;
+    border: none;
+    text-align: center;
+    color: #fff !important;
+    border-radius: 5px;
+    background-color: #49b271;
+}
 .exchange th {
     font-size: 13px;
     line-height: 18px;
