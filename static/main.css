@@ -5,6 +5,9 @@
     padding: 4px 26px 6px 9px !important;
     height: 25px;
 }
+.carousel{
+    padding-top: 30px;
+}
 .main-search i{
     position: absolute;
     padding-left: 130px;
@@ -89,7 +92,7 @@
     display: inline; 
 }
 .dropdown:hover .dropdown-item:hover{
-    text-decoration: underline;
+    text-decoration: underline !important;
 }
 .header-outer{
     padding-top: 15px;
@@ -202,13 +205,43 @@
     margin-top: 40px;
 }
 .blocks-outer{
-    /* width: 100%; */
+    width: 50%;
     height: 19px;
-    background-image: url('https://www.pashabank.az/templates/images/bottom_blocks_top_detail.gif');
+    background-image: url('https://www.pashabank.az/templates/images/bottom_blocks_top_detail.gif') !important;
     background-repeat: no-repeat;
     position: absolute;
     top: 0;
-    margin-left: 47%;
+    margin-left: 870px;
+}
+.footer-img{
+    margin-top: 75px !important;
+}
+.sr{
+    padding-left: 65px;
+}
+tbody{
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+/* .currency{
+    width: 50px;
+    padding-left: 15px;
+} */
+.currency-prices{
+    font-size: 13px;
+    line-height: 18px;
+    color: #fff;
+    /* margin-left: px; */
+    /* padding: 1px 0 10px 0; */
+    text-align: left;
+    font-weight: normal;
+    width: 190px;
+    position: absolute;
+    top: 130px;
+}
+.price{
+    width: 30px;
 }
 .container{
     width: 940px;
@@ -386,4 +419,185 @@
 }
 .third-card-text{
     top: 25px !important;
+}
+.navbar-nav li ul{
+    display: none;
+    position: absolute;
+}
+.navbar-nav li:hover>ul{
+    border-radius: 15px;
+    display: block;
+    background-color: #49B751;
+    width: 200px;
+    z-index: 1;
+    top: 50px;
+    color: white;
+}
+.online-queue a{
+    color: white !important;
+}
+.online-queue li{
+    list-style: none;
+
+}
+.footer-img{
+    background-image: url('https://www.pashabank.az/templates/images/red_bottom_bg.webp');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 60px;
+}
+.utility-outer{
+    width: 100%;
+    background-color: #0f5d1a;
+    height: 46px;
+    z-index: 2006;
+}
+.utility-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8px;
+}
+ .utility-innerline,  .utility-innerline1, .utility-innerline2,  .utility-innerline3{
+    background-color: #0a4c13;
+    width: 220px;
+    margin-right: 20px;
+    height: 29px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.utility-innerline:first-child img {
+    left: -188px;
+}
+.utility-innerline1 :first-child img {
+    left: -154px;
+}
+.utility-innerline2 :first-child img {
+    left: -188px;
+    top: -36px;
+}
+.utility-innerline3 :first-child img {
+    left: -154px;
+    top: -36px
+}
+
+.utility-inner-list span{
+    text-decoration: none;
+    position: relative;
+    top: -9px;
+    display: inline-block;
+    padding: 0 2px;
+}
+.footer-icon img{
+    position: relative;
+    display: inline-block;
+}
+.footer-icon{
+    width: 32px;
+    height: 29px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+
+}
+ul{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+li a{
+    color: white;
+    float: left;
+}
+.utility-inner-list li ul{
+    display: none;
+    position: absolute;
+}
+.utility-inner-list li:hover>ul{
+    display: block;
+    background-color: #0A4C13;
+    width: 207px;
+    z-index: 1;
+    bottom: 29px;
+    color: white;
+}
+.nodecor>a, .nodecor1>a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+ul li{
+    list-style: none;
+}
+.heighline{
+    margin-left: 33px;
+    margin-right: 34px;
+}
+.footer-top{
+    background-color: #0A4C13; 
+}
+.raw a{
+    color: white;
+    background-color: #0A4C13;
+    display: flex;
+    font-variant-numeric: lining-nums;
+    font-size: 14px;
+}
+.second{
+
+    font-weight: bold;
+}
+.bolded{
+    font-weight: bold;
+}
+/* .container{
+    display: flex;
+} */
+.container1{
+    padding-top: 20px;
+    display: flex;
+    width: 940px;
+    margin: 0 auto;
+    position: relative;
+}
+.raw{
+    min-width: 245px;
+}
+hr{
+    height: 1px;
+    background-color: #0F5D1A;
+}
+.share a[title=Adif] img {
+    top: -55px;
+    left: -105px;
+    overflow: hidden;
+}
+.share a{
+    color: #fff;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+    margin-right: 15px;
+    padding-top: 0;
+    margin-top: 5px;
+}
+.share img{
+    position: relative;
+    overflow: hidden;
+}
+.share{
+    padding-top: 10px;
+}
+.br{
+    color: white;
+    font-size: 14px;
+}
+.socials{
+    float: left;
+    display: flex;
 }

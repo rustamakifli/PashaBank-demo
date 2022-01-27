@@ -1,0 +1,144 @@
+.modal-button{
+    width: 130px;
+    height: 27px;
+    border: none;
+    display: block;
+    text-align: center;
+    color: #fff !important;
+    border-radius: 5px;
+    
+}
+
+.error{
+    color: #721c24;
+    height: 40px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    padding-top: 140px !important;
+}
+.div-main{
+    top: 20px;
+    right: 10px;
+    bottom: 50px;
+}
+.menu a:hover{
+    text-decoration: none;
+    color: black;
+}
+.red-button{
+    background-color: red;
+}
+.red-button:hover{
+    background-color: darkred;
+}
+.green-button{
+    background-color: #49B751;
+}
+.green-button:hover{
+    background-color: green;
+}
+.modal-body input{
+    border-radius: 5px;
+    border: solid #49B751;
+}
+.modal-body input:focus{
+    border: solid red;
+}
+.col{
+    text-align: center;
+    width: 100% !important;
+    min-height: 100% !important;
+}
+.all-queue-text{
+    padding-right: 12px;
+
+}
+
+.main-layout{
+    
+    max-width: 1100px;
+    background-color: transparent;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f2f5 !important;
+    min-height: 0;
+}
+.text-content h2{
+    font-size: 48px;
+    line-height: 68px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.text-content h3{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+}
+.main-layout .row{
+    display: flex;
+}
+.main-button{
+    width: 100%;
+    height: 60px;
+    border: none;
+    outline: none;
+    background-color: #49B751;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    line-height: 28px;
+    font-size: 24px;
+    margin: 7px;
+    position: relative;
+    height: 90px!important;
+    transition: all .1s linear;
+    
+}
+.main-div{
+    background-color: #f0f2f5 !important;
+}
+
+.main-button-text{
+    height: 90px;
+    text-decoration: none;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    line-height: 28px;
+    transition: all .1s linear;
+}
+.main-button:hover{
+    background-color: #216b2c;
+    text-decoration: none;
+}
+.main-button-text:hover{
+    text-decoration: none;
+    color: #fff;
+}
+.button-text:hover{
+    text-decoration: none;
+}
+.main-button p{
+    padding-top: 15px;
+    color:#fff;
+}
+.main-page-img{
+    left: 0;
+    top: 190px;
+    width: 100%!important; 
+}
+.main-page-img img{
+    width: auto;
+    height: auto;
+    margin-top: 70px;
+
+}
